@@ -1,12 +1,13 @@
-NAME	= megaphone
+NAME	= phonebook
 
 DIR_O = ./obj
 
-SRCS	= megaphone.cpp
+SRCS	= main.cpp PhoneBook.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
-FLAGS	= -Wall -Wextra -Werror
+FLAGS   =
+#FLAGS	= -Wall -Wextra -Werror
 
 CC		= clang++
 
