@@ -7,15 +7,15 @@ void PhoneBook::add(void)
 {
 	static int i = 0;
 
-	std::cout << "ENTER FIRST: ";
+	std::cout << "ENTER FIRST NAME: ";
 	std::cin >> arr[i][0];
-	std::cout << "ENTER LAST: ";
+	std::cout << "ENTER LAST NAME: ";
 	std::cin >> arr[i][1];
-	std::cout << "ENTER NICK: ";
+	std::cout << "ENTER NICKNAME: ";
 	std::cin >> arr[i][2];
-	std::cout << "ENTER PHONE: ";
+	std::cout << "ENTER PHONE NUMBER: ";
 	std::cin >> arr[i][3];
-	std::cout << "ENTER SECRET: ";
+	std::cout << "ENTER DARKEST SECRET: ";
 	std::cin >> arr[i][4];
 	i++;
 	if (i == 8)
@@ -46,6 +46,7 @@ void PhoneBook::search(void)
 		std::cout << std::endl;
 		i++;
 	}
+	std::cout << "ENTER INDEX: ";
 	std::cin >> i;
 	j = 0;
 	if (arr[i][0].empty())

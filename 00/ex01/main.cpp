@@ -8,6 +8,7 @@ int main()
 
 	while (1)
 	{
+		std::cout << "ENTER COMMAND: ";
 		std::cin >> command;
 		if (command == "ADD")
 			Book.add();
