@@ -1,12 +1,13 @@
-NAME	= phonebook
+NAME	= accounts
 
 DIR_O = ./obj
 
-SRCS	= main.cpp PhoneBook.cpp
+SRCS	= tests.cpp Account.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
-FLAGS	= -Wall -Wextra -Werror
+FLAGS   =
+#FLAGS	= -Wall -Wextra -Werror
 
 CC		= clang++
 
