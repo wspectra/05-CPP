@@ -2,17 +2,20 @@
 #define PHONEBOOK_HPP
 
 #include <iostream>
-#include <iomanip>
+#include <stdlib.h>
+#include <cstring>
+#include <string>
+#include "Contact.hpp"
 
 class PhoneBook{
 private:
-	std::string arr[8][5];
+	Contact contacts[8];
+	int nb_contacts;
 public:
 	PhoneBook(void);
 	~PhoneBook(void);
 	void add();
 	void search();
-
 };
 
 

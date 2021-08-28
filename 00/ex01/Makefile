@@ -2,7 +2,7 @@ NAME	= phonebook
 
 DIR_O = ./obj
 
-SRCS	= main.cpp PhoneBook.cpp
+SRCS	= main.cpp PhoneBook.cpp Contact.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
