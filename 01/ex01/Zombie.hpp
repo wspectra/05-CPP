@@ -7,6 +7,7 @@ public:
 	Zombie(void);
 	Zombie(std::string);
 	~Zombie();
+	void set_name(std::string name);
 	void announce(void);
 
 private:
