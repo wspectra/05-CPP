@@ -14,23 +14,11 @@ void PhoneBook::add(void)
 	static int i = 0;
 	contacts[i].set_index(i);
 	contacts[i].set_info();
-
-//	std::cout << "ENTER FIRST NAME: ";
-//	std::cin >> arr[i][0];
-//	std::cout << "ENTER LAST NAME: ";
-//	std::cin >> arr[i][1];
-//	std::cout << "ENTER NICKNAME: ";
-//	std::cin >> arr[i][2];
-//	std::cout << "ENTER PHONE NUMBER: ";
-//	std::cin >> arr[i][3];
-//	std::cout << "ENTER DARKEST SECRET: ";
-//	std::cin >> arr[i][4];
 	i++;
 	if (nb_contacts != 8)
 		nb_contacts = i;
 	if (i == 8)
 		i = 0;
-
 }
 
 void PhoneBook::search(void)
