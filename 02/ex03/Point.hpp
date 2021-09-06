@@ -1,0 +1,6 @@
+#program once
+
+class Point {
+
+};
+

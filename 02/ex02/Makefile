@@ -1,8 +1,8 @@
-NAME	= karenFilter
+NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp Karen.cpp
+SRCS	= main.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
