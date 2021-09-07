@@ -2,7 +2,7 @@ NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp
+SRCS	= main.cpp Fixed.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
