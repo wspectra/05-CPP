@@ -42,7 +42,7 @@ Fixed &Fixed::operator=(const Fixed &object)
 
 int Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
+//	std::cout << "getRawBits member function called" << std::endl;
 	return (value);
 }
 
