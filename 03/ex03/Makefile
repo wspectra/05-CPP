@@ -2,7 +2,7 @@ NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp ClapTrap.cpp
+SRCS	= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
@@ -11,7 +11,7 @@ FLAGS	= -std=c++98
 
 CC		= clang++
 
-HEADER	= ClapTrap.hpp
+HEADER	= ClapTrap.hpp FragTrap.hpp ScavTrap.hpp DiamondTrap.hpp
 
 all:	dir $(NAME) done
 

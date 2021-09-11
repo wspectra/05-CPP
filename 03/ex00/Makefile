@@ -6,8 +6,7 @@ SRCS	= main.cpp ClapTrap.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
-FLAGS	= -std=c++98
-#-Wall -Wextra -Werror
+FLAGS	= -std=c++98 -Wall -Wextra -Werror
 
 CC		= clang++
 
