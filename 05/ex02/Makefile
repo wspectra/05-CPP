@@ -2,7 +2,7 @@ NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
+SRCS	= main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
@@ -10,9 +10,7 @@ FLAGS	= -std=c++98 -Wall -Wextra -Werror
 
 CC		= clang++
 
-HEADER	= AMateria.hpp Ice.hpp Cure.hpp Character.hpp ICharacter.hpp \
- 			IMateriaSource.hpp MateriaSource.hpp
-
+HEADER	= Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
 
 all:	dir $(NAME) done
 

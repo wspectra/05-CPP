@@ -7,7 +7,7 @@ DiamondTrap::DiamondTrap(void)
 
 DiamondTrap::~DiamondTrap()
 {
-    std::cout << "DiamondTrap " << name << " deleted" << std::endl;
+    std::cout << "DiamondTrap " << " deleted" << std::endl;
 
 }
 
@@ -20,7 +20,7 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &object)
 {
     if (this == &object)
         return (*this);
-    std::cout << "DiamondTrap " << name << " copied " << object.name <<std::endl;
+    std::cout << "DiamondTrap " << " copied " << object.name <<std::endl;
     name = object.name;
     hitpoints = object.hitpoints;
     energy = object.energy;
@@ -28,19 +28,22 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &object)
     return (*this);
 }
 
-DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name),
+									ScavTrap(name), FragTrap(name)
 {
-    d_name = name;
-//    ClapTrap::name = name + "_clap_name";
+	ScavTrap tmp(name);
+    this->d_name = name;
+	this->ClapTrap::name = name + "_clap_name";
     hitpoints = FragTrap::hitpoints;
-    energy = ScavTrap::energy;
+    energy = tmp.getEnergy();
     damage = FragTrap::damage;
-    std::cout << "DiamondTrap " << name << " created" << std::endl;
+    std::cout << "DiamondTrap " << d_name << " created" << std::endl;
 }
 
 void DiamondTrap::whoAmI()
 {
-    std::cout << "My name: " << d_name << "\t\tClapTrap name :" << this->ClapTrap::name
+    std::cout << "My name: " << d_name << "\t\tClapTrap name :" <<
+	this->ClapTrap::name
     << std::endl;
 }
 

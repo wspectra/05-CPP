@@ -29,13 +29,14 @@ int main( void )
     for (int i = 0; i < 4; i++)
         delete arr[i];
     std::cout << "======================================" << std::endl;
-    Cat v1("v1");
+    Dog v1("v1");
     v1.setIdea("Idea 1");
     v1.setIdea("Idea 2");
     v1.setIdea("Idea 3");
     print_ideas(v1.getBrain()->getIdeas());
-    Cat v2("v2");
+    Dog v2("v2");
     v2 = v1;
-    print_ideas(v2.getBrain()->getIdeas());
+    print_ideas(v2.getBrain()->getIdeas()); ///будут утечки
+
     return 0;
 }

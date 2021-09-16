@@ -31,7 +31,8 @@ Dog &Dog::operator=(const Dog &object)
     if (this == &object)
         return (*this);
     type = "Dog";
-    brain = new Brain(*object.brain);
+	delete brain;
+	brain = new Brain(*object.brain);
     std::cout << "Dog was copied " <<std::endl;
     return (*this);
 }

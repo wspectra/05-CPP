@@ -30,7 +30,6 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &object)
 
 ClapTrap::ClapTrap(std::string name)
 {
-	this->name = name;
 	hitpoints = 10;
 	energy = 10;
 	damage = 0;
@@ -55,4 +54,10 @@ void ClapTrap::beRepaired(unsigned int amount)
 	std::cout << "ClapTrap " << name << " get "  << amount
 			<< " points of hitpoints!"  << std::endl;
 	hitpoints = hitpoints + amount;
+}
+
+void ClapTrap::getStatus()
+{
+	std::cout << "HP: " << hitpoints << "   Energy: " << energy
+			  << "   damage: " << damage << std::endl;
 }

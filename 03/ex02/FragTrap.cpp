@@ -1,5 +1,5 @@
 #include "FragTrap.hpp"
-FragTrap::FragTrap(void)
+FragTrap::FragTrap(void) : ClapTrap()
 {
     std::cout << "FragTrap " << "default created" << std::endl;
 }
@@ -27,9 +27,8 @@ FragTrap &FragTrap::operator=(const FragTrap &object)
     return (*this);
 }
 
-FragTrap::FragTrap(std::string name)
+FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
-    this->name = name;
     hitpoints = 100;
     energy = 100;
     damage = 30;

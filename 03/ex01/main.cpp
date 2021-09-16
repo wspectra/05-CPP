@@ -5,9 +5,11 @@
 int main( void )
 {
     ScavTrap mike("Mike");
-    mike.attack("Ann");
+	mike.getStatus();
+	mike.attack("Ann");
     mike.takeDamage(10);
     mike.beRepaired(5);
     mike.guardGate();
+	mike.getStatus();
 	return 0;
 }

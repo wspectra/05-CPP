@@ -1,6 +1,9 @@
 #pragma once
+#include "MainHeader.hpp"
+
 class AMateria {
 protected:
+	std::string type;
 public:
     AMateria(std::string const & type);
     AMateria(void);

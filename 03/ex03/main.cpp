@@ -8,11 +8,13 @@
 int main( void )
 {
     DiamondTrap mike("Mike");
-    mike.attack("Ann");
+	mike.getStatus();
+	mike.attack("Ann");
     mike.takeDamage(10);
     mike.beRepaired(5);
     mike.guardGate();
     mike.highFivesGuys();
     mike.whoAmI();
-    return 0;	return 0;
+	mike.getStatus();
+	return 0;	return 0;
 }

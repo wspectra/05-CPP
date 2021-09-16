@@ -1,6 +1,6 @@
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap(void)
+ScavTrap::ScavTrap(void) : ClapTrap()
 {
     std::cout << "ScavTrap " << "default created" << std::endl;
 }
@@ -28,9 +28,8 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &object)
     return (*this);
 }
 
-ScavTrap::ScavTrap(std::string name)
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-    this->name = name;
     hitpoints = 100;
     energy = 50;
     damage = 20;

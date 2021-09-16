@@ -1,14 +1,11 @@
-#include "AMateria.hpp"
+#include "MainHeader.hpp"
 
-AMateria::AMateria(void) : type("AMateria")
-{
-    std::cout << "AMateria " << "created" << std::endl;
-}
 
-AMateria::~AMateria()
-{
-    std::cout << "AMateria " << "deleted" << std::endl;
-}
+AMateria::AMateria(std::string const & type) : type(type) {}
+
+AMateria::AMateria(void) {}
+
+AMateria::~AMateria() {}
 
 AMateria::AMateria(const AMateria &object)
 {
@@ -19,7 +16,16 @@ AMateria &AMateria::operator=(const AMateria &object)
 {
     if (this == &object)
         return (*this);
-    type = "AMateria";
-    std::cout << "AMateria was copied " <<std::endl;
+	type = object.getType();
     return (*this);
+}
+
+std::string const &AMateria::getType() const
+{
+	return (type);
+}
+
+void AMateria::use(ICharacter& target)
+{
+	target.getName();
 }

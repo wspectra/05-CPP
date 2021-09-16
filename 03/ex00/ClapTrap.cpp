@@ -56,3 +56,9 @@ void ClapTrap::beRepaired(unsigned int amount)
 			<< " points of hitpoints!"  << std::endl;
 	hitpoints = hitpoints + amount;
 }
+
+void ClapTrap::getStatus()
+{
+	std::cout <<"HP: " << hitpoints << "   Energy: " << energy
+	<< "   damage: " << damage << std::endl;
+}

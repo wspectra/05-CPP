@@ -33,7 +33,8 @@ Cat &Cat::operator=(const Cat &object)
     if (this == &object)
         return (*this);
     type = "Cat";
-    brain = new Brain(*object.brain);
+	delete brain;
+	brain = new Brain(*object.brain);
     std::cout << "Cat was copied " <<std::endl;
     return (*this);
 }
