@@ -1,13 +1,13 @@
 #include "MainHeader.hpp"
 
-Character::Character(void)
+Character::Character(void) : ICharacter()
 {
 	bzero(arr, sizeof(AMateria*) * 4);
 }
 
-Character::Character(const std::string name) : name(name), nb_equip(0) {}
+Character::Character(const std::string name) : ICharacter(), name(name), nb_equip(0) {}
 
-Character::Character(const Character &object)
+Character::Character(const Character &object) : ICharacter()
 {
 	*this = object;
 }

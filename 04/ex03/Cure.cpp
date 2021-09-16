@@ -1,11 +1,12 @@
 #include "MainHeader.hpp"
 
 
-Cure::Cure(void) {
+Cure::Cure(void) : AMateria()
+{
 	type = "cure";
 }
 
-Cure::Cure(const Cure &object)
+Cure::Cure(const Cure &object) : AMateria()
 {
 	*this = object;
 }

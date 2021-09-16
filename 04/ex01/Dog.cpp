@@ -1,13 +1,13 @@
 #include "Dog.hpp"
 
-Dog::Dog(void)
+Dog::Dog(void) : Animal()
 {
     type = "Dog";
     std::cout << "Dog " << "created" << std::endl;
     brain = new Brain();
 }
 
-Dog::Dog(std::string name)
+Dog::Dog(std::string name) : Animal()
 {
     type = "Dog";
     this->name = name;
@@ -21,7 +21,7 @@ Dog::~Dog()
     std::cout << "Dog " << name << " deleted" << std::endl;
 }
 
-Dog::Dog(const Dog &object)
+Dog::Dog(const Dog &object) : Animal()
 {
     *this = object;
 }

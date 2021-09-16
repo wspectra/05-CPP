@@ -1,6 +1,6 @@
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(void)
+WrongCat::WrongCat(void) :WrongAnimal()
 {
     type = "WrongCat";
     std::cout << "WrongCat " << "created" << std::endl;
@@ -11,7 +11,7 @@ WrongCat::~WrongCat()
     std::cout << "WrongCat " << "deleted" << std::endl;
 }
 
-WrongCat::WrongCat(const WrongCat &object)
+WrongCat::WrongCat(const WrongCat &object) :WrongAnimal()
 {
     *this = object;
 }

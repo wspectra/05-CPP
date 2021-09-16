@@ -1,6 +1,6 @@
 #include "MainHeader.hpp"
 
-MateriaSource::MateriaSource(void)
+MateriaSource::MateriaSource(void) : IMateriaSource()
 {
 	bzero(src, sizeof(AMateria*) * 4);
 	nb_src = 0;
@@ -12,7 +12,7 @@ MateriaSource::~MateriaSource()
 		delete src[nb_src--];
 }
 
-MateriaSource::MateriaSource(const MateriaSource &object)
+MateriaSource::MateriaSource(const MateriaSource &object) : IMateriaSource()
 {
 	*this = object;
 }

@@ -2,7 +2,7 @@
 
 #include "Cat.hpp"
 
-Cat::Cat(void)
+Cat::Cat(void) : Animal()
 {
     type = "Cat";
     std::cout << "Cat " << "created" << std::endl;
@@ -13,7 +13,7 @@ Cat::~Cat()
     std::cout << "Cat " << "deleted" << std::endl;
 }
 
-Cat::Cat(const Cat &object)
+Cat::Cat(const Cat &object) : Animal()
 {
     *this = object;
 }

@@ -1,12 +1,12 @@
 #include "MainHeader.hpp"
 
 
-Ice::Ice(void)
+Ice::Ice(void) : AMateria()
 {
 	type = "ice";
 }
 
-Ice::Ice(const Ice &object)
+Ice::Ice(const Ice &object) : AMateria()
 {
 	*this = object;
 }

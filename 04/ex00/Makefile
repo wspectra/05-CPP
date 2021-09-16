@@ -2,7 +2,7 @@ NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp
+SRCS	= main.cpp Animal.cpp  Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
@@ -10,7 +10,7 @@ FLAGS	= -std=c++98 -Wall -Wextra -Werror
 
 CC		= clang++
 
-HEADER	=
+HEADER	= Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp
 
 all:	dir $(NAME) done
 
