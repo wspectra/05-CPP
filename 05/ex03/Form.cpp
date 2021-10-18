@@ -14,7 +14,7 @@ _gradeSign(gradeSign), _gradeExecute(gradeExecute), _signed(false)
 	else if (gradeSign > 150 || gradeExecute  > 150)
 		throw Form::GradeTooLowException();
 	else
-		std::cout << "Form " << "created" << std::endl;
+		std::cout << "Form " << name << " created" << std::endl;
 }
 
 Form::~Form()

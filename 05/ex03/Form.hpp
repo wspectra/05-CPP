@@ -33,7 +33,7 @@ public:
 	Form(void);
 	Form(std::string name, int gradeSign, int gradeExecute);
 	Form(const Form &object);
-	~Form(void);
+	virtual ~Form(void);
 	Form &operator=(const Form &object);
 
 	std::string getName(void) const;

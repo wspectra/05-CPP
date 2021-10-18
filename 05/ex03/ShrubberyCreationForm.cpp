@@ -16,10 +16,7 @@ ShrubberyCreationForm::ShrubberyCreationForm(const ShrubberyCreationForm &object
 _target = object._target;
 }
 
-ShrubberyCreationForm::~ShrubberyCreationForm(void)
-{
-	std::cout << "ShrubberyCreationForm deleted" << std::endl;
-}
+ShrubberyCreationForm::~ShrubberyCreationForm(void) {}
 
 ShrubberyCreationForm &ShrubberyCreationForm::operator=(const
 													ShrubberyCreationForm &object)

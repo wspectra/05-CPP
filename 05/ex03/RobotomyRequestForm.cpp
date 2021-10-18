@@ -16,10 +16,7 @@ RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &object)
 _target = object._target;
 }
 
-RobotomyRequestForm::~RobotomyRequestForm(void)
-{
-	std::cout << "RobotomyRequestForm deleted" << std::endl;
-}
+RobotomyRequestForm::~RobotomyRequestForm(void) {}
 
 RobotomyRequestForm &RobotomyRequestForm::operator=(const
 				RobotomyRequestForm &object)

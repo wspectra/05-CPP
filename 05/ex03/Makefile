@@ -3,7 +3,8 @@ NAME	= test
 DIR_O = ./obj
 
 SRCS	= main.cpp Bureaucrat.cpp Form.cpp RobotomyRequestForm.cpp \
-			ShrubberyCreationForm.cpp PresidentialPardonForm.cpp
+			ShrubberyCreationForm.cpp PresidentialPardonForm.cpp \
+			Intern.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
@@ -12,7 +13,8 @@ FLAGS	= -std=c++98 -Wall -Wextra -Werror
 CC		= clang++
 
 HEADER	= Bureaucrat.hpp Form.hpp RobotomyRequestForm.hpp \
-			ShrubberyCreationForm.hpp PresidentialPardonForm.hpp
+			ShrubberyCreationForm.hpp PresidentialPardonForm.hpp \
+			Intern.hpp
 
 all:	dir $(NAME) done
 

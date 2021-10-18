@@ -17,9 +17,7 @@ PresidentialPardonForm::PresidentialPardonForm(const PresidentialPardonForm &obj
 }
 
 PresidentialPardonForm::~PresidentialPardonForm(void)
-{
-	std::cout << "PresidentialPardonForm deleted" << std::endl;
-}
+{}
 
 PresidentialPardonForm &PresidentialPardonForm::operator=(const
 		PresidentialPardonForm &object)
