@@ -1,8 +1,8 @@
-NAME	=
+NAME	= test
 
 DIR_O = ./obj
 
-SRCS	= main.cpp
+SRCS	= main.cpp Base.cpp
 
 OBJS	= $(addprefix $(DIR_O)/,${SRCS:.cpp=.o})
 
@@ -10,7 +10,7 @@ FLAGS	= -std=c++98 -Wall -Wextra -Werror
 
 CC		= clang++
 
-HEADER	=
+HEADER	= A.hpp B.hpp C.hpp Base.hpp
 
 all:	dir $(NAME) done
 

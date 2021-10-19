@@ -1,4 +1,4 @@
-NAME	=
+NAME	= test
 
 DIR_O = ./obj
 
